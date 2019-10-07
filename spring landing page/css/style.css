@@ -1,0 +1,229 @@
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+body {
+    font-family: 'Lobster', cursive;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+    color: #102746;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.section__title{
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 42px;
+    position: relative;
+    padding-bottom: 10px;
+}
+.section__title::after{
+    display: block;
+    content: '';
+    width: 253px;
+    height: 3px;
+    background-color: #006DFE;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* header style start*/
+
+header {
+    position: fixed; /* прибивает хедер к верху*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: .2s linear;
+    z-index: 999;
+}
+.header__logo{
+    font-size: 35px;
+    color: white;
+}
+.header_active{
+    background: #0E1D28;
+}
+.wrapper {
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.wrapper__full{
+    max-width: 1262px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.header__wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 56px;
+    padding-bottom: 20px;
+}
+.header__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.header__item {
+    margin-right: 82px;
+}
+.header__item:last-child {
+    margin-right: 0;
+}
+.header__link {
+    font-size: 23px;
+    line-height: 24px;
+    color: white;
+    text-decoration: none;
+}
+.header__link:hover, .header__link:focus, .header__link:active {
+    opacity: .75;
+}
+
+/* header style end*/
+
+/* intro style start*/
+
+.intro {
+    min-height: 100vh;
+    background: url(../img/комбайн.jpg) no-repeat center;
+    background-size: cover;
+    padding-top: 263px;
+    padding-bottom: 223px;
+}
+.intro__title {
+    max-width: 619px;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 60px;
+    color: white;
+    margin-bottom: 22px;
+}
+.intro__subtitle {
+    max-width: 546px;
+    font-size: 23px;
+    line-height: 24px;
+    color: white;
+    margin-bottom: 59px;
+}
+/* intro style end*/
+
+/* advantages style start*/
+.advantages{
+    margin-bottom: 131px;
+}
+.advantages__wrap {
+    max-width: 1262px;
+    background: white;
+    margin: 0 auto;
+    box-shadow: 0 2px 20px rgba(21, 24, 36, 0.15993);
+    position: relative;
+}
+.advantages__title {
+    width: 100%;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 42px;
+    padding: 93px 100px 88px 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-100%);
+    background: white;
+}
+.advantages__cards {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 55px;
+    padding: 0 100px;
+}
+.advantages__card{
+    grid-column: span 1;
+}
+.advantages__card-pic{
+    max-width: 66px;
+    padding-bottom: 37px;
+}
+.advantages__card-desk{
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 39px;
+}
+/* advantages style end*/
+
+/* catalog style start*/
+.catalog{
+    margin-bottom: 86px;
+}
+.catalog__title{
+    margin-bottom: 54px;
+}
+.catalog__cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 57px;
+}
+.catalog__card{
+    display: flex;
+    flex-direction: column;
+}
+.catalog__card-pic{
+    position: relative;
+    margin-bottom: 45px;
+}
+.catalog__card-stats{
+    width: 100%;
+    background: #0E1D28;
+    padding: 16px 25px;
+}
+.catalog__card-title{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: white;
+    margin: 0 auto 0 0;
+}
+.catalog__card-desk{
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 31px;
+}
+.catalog__card-price{
+    font-size: 30px;
+    line-height: 24px;
+    margin-bottom: 31px;
+}
+/* top style end*/
+
+/* footer style start*/
+.footer{
+    background: #0E1D28;
+    padding: 15px 0;
+}
+.footer__item{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer__logo{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    font-size: 35px;
+    color: white;
+}
+.footer__info{
+    width: 50%;
+    color: white;
+    font-size: 23px;
+    line-height: 28px;
+}
+/* footer style end*/
